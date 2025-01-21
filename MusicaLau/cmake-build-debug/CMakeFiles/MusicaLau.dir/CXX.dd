@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Piano.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Guitare.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Instrument.cpp.obj: dyndep
+

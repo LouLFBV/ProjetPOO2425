@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/hugoc/CLionProjects/ProjetPOO2425/MusicaLau/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/hugoc/CLionProjects/ProjetPOO2425/MusicaLau",
+	"dir-top-bld" : "C:/Users/hugoc/CLionProjects/ProjetPOO2425/MusicaLau/cmake-build-debug",
+	"dir-top-src" : "C:/Users/hugoc/CLionProjects/ProjetPOO2425/MusicaLau",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/hugoc/CLionProjects/ProjetPOO2425/MusicaLau/cmake-build-debug/CMakeFiles/MusicaLau.dir"
+}
