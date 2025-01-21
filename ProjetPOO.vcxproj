@@ -127,7 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ProjetPOO.cpp" />
+    <ClCompile Include="Guitare.cpp" />
+    <ClCompile Include="Instrument.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="Xylophone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Guitare.hpp" />
+    <ClInclude Include="Instrument.hpp" />
+    <ClInclude Include="Piano.hpp" />
+    <ClInclude Include="Xylophone.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
