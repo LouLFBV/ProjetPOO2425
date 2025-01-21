@@ -22,8 +22,8 @@ public:
 	string GetCouleur() const;
 
 	virtual void Afficher() const;
-	virtual void JouerNotes() const;
-	virtual void ChoisirRythme() const;
+	virtual void JouerNotes(int rythme) const;
+	virtual int ChoisirRythme() const;
 	virtual void LirePartition() const;
 };
 

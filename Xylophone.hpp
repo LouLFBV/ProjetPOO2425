@@ -19,8 +19,8 @@ public:
 	virtual ~Xylophone();
 
 	virtual void Afficher() const override;
-	virtual void JouerNotes() const override;
-	virtual void ChoisirRythme() const override;
+	virtual void JouerNotes(int rythme) const override;
+	virtual int ChoisirRythme() const override;
 	virtual void LirePartition() const override;
 };
 
