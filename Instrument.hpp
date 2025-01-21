@@ -8,7 +8,7 @@ using namespace std;
 
 class Instrument
 {
-private:
+protected:
 
 	string m_nom;
 	string m_couleur;
@@ -17,6 +17,9 @@ public:
 
 	Instrument(string nom, string couleur);
 	virtual ~Instrument();
+
+	string GetNom() const;
+	string GetCouleur() const;
 
 	virtual void Afficher() const;
 	virtual void JouerNotes() const;
