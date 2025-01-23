@@ -4,11 +4,23 @@
 
 #ifndef GUITARE_H
 #define GUITARE_H
+#include <string>
+
+#include "Instrument.h"
 
 
+class Guitare : public Instrument {
+private :
 
-class Guitare {
+public:
 
+    Guitare(std::string pNom, std::string pCouleur);
+    virtual ~Guitare()();
+
+    virtual void Afficher() const override;
+    virtual void JouerNotes() const override;
+    virtual int ChoisirRythme(int rythme) const override;
+    virtual void LirePartition() const override;
 };
 
 

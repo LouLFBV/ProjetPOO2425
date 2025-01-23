@@ -19,9 +19,12 @@ public:
     Instrument(std::string pNom, std::string pCouleur);
     virtual ~Instrument();
 
+    std::string GetNom() const;
+    std::string GetCouleur() const;
+
     virtual void Afficher() const;
     virtual void JouerNotes() const;
-    virtual void ChoisirRythme() const;
+    virtual int ChoisirRythme(int ryhtme) const;
     virtual void LirePartition() const;
 };
 
