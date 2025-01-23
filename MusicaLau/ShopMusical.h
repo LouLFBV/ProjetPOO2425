@@ -10,9 +10,11 @@
 class ShopMusical {
     private:
 
-    Instrument *User;
+
+
 
 public :
+
     ShopMusical();
     ~ShopMusical();
 

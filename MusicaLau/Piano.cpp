@@ -7,13 +7,15 @@
 #include <iostream>
 #include <ostream>
 
-Piano::Piano(std::string nom, std::string couleur) : Instrument(nom, couleur){}
+Piano::Piano(std::string pNom, std::string pCouleur) : Instrument(pNom, pCouleur) {
+
+}
 
 Piano::~Piano(){}
 
 void Piano::Afficher() const
 {
-    std::cout << "Ceci est un piano." << std::endl;
+    std::cout << "Ceci est un " << aNom << " La couleur est " << aCouleur <<std::endl;
 }
 
 void Piano::JouerNotes() const

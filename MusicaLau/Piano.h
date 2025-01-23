@@ -11,11 +11,13 @@
 class Piano : public Instrument {
 private:
 
-    std::string m_nom;
+
+
+
 
 public:
 
-    Piano(std::string nom, std::string couleur);
+    Piano(std::string pNom, std::string pCouleur);
     virtual ~Piano();
 
     virtual void Afficher() const override;

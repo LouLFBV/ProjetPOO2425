@@ -9,14 +9,14 @@
 
 
 class Instrument {
-private:
+protected:
 
-    std::string m_nom;
-    std::string m_couleur;
+    std::string aNom;
+    std::string aCouleur;
 
 public:
 
-    Instrument(std::string nom, std::string couleur);
+    Instrument(std::string pNom, std::string pCouleur);
     virtual ~Instrument();
 
     virtual void Afficher() const;
