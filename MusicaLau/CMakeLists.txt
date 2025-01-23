@@ -13,4 +13,8 @@ add_executable(MusicaLau
         Guitare.cpp
         Guitare.h
         Instrument.cpp
-        Instrument.h)
+        Instrument.h
+        Flute.cpp
+        Flute.h
+        Triangle.cpp
+        Triangle.h)

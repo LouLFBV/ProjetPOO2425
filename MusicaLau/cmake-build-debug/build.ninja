@@ -129,7 +129,39 @@ build CMakeFiles\MusicaLau.dir\Instrument.cpp.obj: CXX_COMPILER__MusicaLau_scann
   TARGET_PDB = MusicaLau.pdb
   dyndep = CMakeFiles/MusicaLau.dir/CXX.dd
 
-build CMakeFiles\MusicaLau.dir\CXX.dd | C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\cmake-build-debug\CMakeFiles\MusicaLau.dir\CXXModules.json CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Piano.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Guitare.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Instrument.cpp.obj.modmap: CXX_DYNDEP__MusicaLau_Debug CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Piano.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Guitare.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Instrument.cpp.obj.ddi | C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\cmake-build-debug\CMakeFiles\MusicaLau.dir\CXXDependInfo.json
+build CMakeFiles\MusicaLau.dir\Flute.cpp.obj.ddi: CXX_SCAN__MusicaLau_Debug C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\Flute.cpp || cmake_object_order_depends_target_MusicaLau
+  DEP_FILE = CMakeFiles\MusicaLau.dir\Flute.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\MusicaLau.dir\Flute.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJ_FILE = CMakeFiles\MusicaLau.dir\Flute.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\MusicaLau.dir\Flute.cpp.obj.ddi.i
+
+build CMakeFiles\MusicaLau.dir\Flute.cpp.obj: CXX_COMPILER__MusicaLau_scanned_Debug C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\Flute.cpp | CMakeFiles\MusicaLau.dir\Flute.cpp.obj.modmap || cmake_object_order_depends_target_MusicaLau CMakeFiles\MusicaLau.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\MusicaLau.dir\Flute.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\MusicaLau.dir
+  OBJECT_FILE_DIR = CMakeFiles\MusicaLau.dir
+  TARGET_COMPILE_PDB = CMakeFiles\MusicaLau.dir\
+  TARGET_PDB = MusicaLau.pdb
+  dyndep = CMakeFiles/MusicaLau.dir/CXX.dd
+
+build CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.ddi: CXX_SCAN__MusicaLau_Debug C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\Triangle.cpp || cmake_object_order_depends_target_MusicaLau
+  DEP_FILE = CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJ_FILE = CMakeFiles\MusicaLau.dir\Triangle.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.ddi.i
+
+build CMakeFiles\MusicaLau.dir\Triangle.cpp.obj: CXX_COMPILER__MusicaLau_scanned_Debug C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\Triangle.cpp | CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.modmap || cmake_object_order_depends_target_MusicaLau CMakeFiles\MusicaLau.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\MusicaLau.dir
+  OBJECT_FILE_DIR = CMakeFiles\MusicaLau.dir
+  TARGET_COMPILE_PDB = CMakeFiles\MusicaLau.dir\
+  TARGET_PDB = MusicaLau.pdb
+  dyndep = CMakeFiles/MusicaLau.dir/CXX.dd
+
+build CMakeFiles\MusicaLau.dir\CXX.dd | C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\cmake-build-debug\CMakeFiles\MusicaLau.dir\CXXModules.json CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Piano.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Guitare.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Instrument.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Flute.cpp.obj.modmap CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.modmap: CXX_DYNDEP__MusicaLau_Debug CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Piano.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Guitare.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Instrument.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Flute.cpp.obj.ddi CMakeFiles\MusicaLau.dir\Triangle.cpp.obj.ddi | C$:\Users\hugoc\CLionProjects\ProjetPOO2425\MusicaLau\cmake-build-debug\CMakeFiles\MusicaLau.dir\CXXDependInfo.json
 
 
 # =============================================================================
@@ -139,7 +171,7 @@ build CMakeFiles\MusicaLau.dir\CXX.dd | C$:\Users\hugoc\CLionProjects\ProjetPOO2
 #############################################
 # Link the executable MusicaLau.exe
 
-build MusicaLau.exe: CXX_EXECUTABLE_LINKER__MusicaLau_Debug CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj CMakeFiles\MusicaLau.dir\Piano.cpp.obj CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj CMakeFiles\MusicaLau.dir\Guitare.cpp.obj CMakeFiles\MusicaLau.dir\Instrument.cpp.obj
+build MusicaLau.exe: CXX_EXECUTABLE_LINKER__MusicaLau_Debug CMakeFiles\MusicaLau.dir\ShopMusical.cpp.obj CMakeFiles\MusicaLau.dir\Piano.cpp.obj CMakeFiles\MusicaLau.dir\Xylophone.cpp.obj CMakeFiles\MusicaLau.dir\Guitare.cpp.obj CMakeFiles\MusicaLau.dir\Instrument.cpp.obj CMakeFiles\MusicaLau.dir\Flute.cpp.obj CMakeFiles\MusicaLau.dir\Triangle.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
