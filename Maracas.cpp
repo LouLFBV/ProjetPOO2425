@@ -42,59 +42,6 @@ void Maracas::LirePartition() const
 
     cout << "Je lis la partition des maracas." << endl;
 
-    // Partition pour "Twinkle Twinkle Little Star"
-
-    Beep(261, 500);  // C4
-    Beep(261, 500);  // C4
-    Beep(392, 500);  // G4
-    Beep(392, 500);  // G4
-    Beep(440, 500);  // A4
-    Beep(440, 500);  // A4
-    Beep(392, 1000); // G4
-    Sleep(500);      // Pause
-
-    Beep(349, 500);  // F4
-    Beep(349, 500);  // F4
-    Beep(330, 500);  // E4
-    Beep(330, 500);  // E4
-    Beep(294, 500);  // D4
-    Beep(294, 500);  // D4
-    Beep(261, 1000); // C4
-    Sleep(500);      // Pause
-
-    Beep(392, 500);  // G4
-    Beep(392, 500);  // G4
-    Beep(349, 500);  // F4
-    Beep(349, 500);  // F4
-    Beep(330, 500);  // E4
-    Beep(330, 500);  // E4
-    Beep(294, 1000); // D4
-    Sleep(500);      // Pause
-
-    Beep(392, 500);  // G4
-    Beep(392, 500);  // G4
-    Beep(349, 500);  // F4
-    Beep(349, 500);  // F4
-    Beep(330, 500);  // E4
-    Beep(330, 500);  // E4
-    Beep(294, 1000); // D4
-    Sleep(500);      // Pause
-
-    Beep(261, 500);  // C4
-    Beep(261, 500);  // C4
-    Beep(392, 500);  // G4
-    Beep(392, 500);  // G4
-    Beep(440, 500);  // A4
-    Beep(440, 500);  // A4
-    Beep(392, 1000); // G4
-    Sleep(500);      // Pause
-
-    Beep(349, 500);  // F4
-    Beep(349, 500);  // F4
-    Beep(330, 500);  // E4
-    Beep(330, 500);  // E4
-    Beep(294, 500);  // D4
-    Beep(294, 500);  // D4
-    Beep(261, 1000); // C4
-    Sleep(500);      // Pause
+    // Son strident et très aigu en continu
+    Beep(13000, 5000); // 13000 Hz pendant 10000 ms (10 secondes)
 }
