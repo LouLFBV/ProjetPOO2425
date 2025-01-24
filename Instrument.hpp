@@ -5,6 +5,8 @@
 #include<string>
 #include<fstream>
 #include <windows.h>
+#include<vector>
+#include<map>
 
 using namespace std;
 
@@ -24,9 +26,9 @@ public:
 	string GetCouleur() const;
 
 	virtual void Afficher() const;
-	virtual void JouerNotes(int rythme) const;
-	virtual int ChoisirRythme() const;
-	virtual void LirePartition() const;
+	virtual void JouerNotes(float rythme) const;
+	virtual float ChoisirRythme() const;
+	virtual void LirePartition(map<string,int> pp, float rythme, string partition) const;
 };
 
 #endif

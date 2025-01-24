@@ -19,9 +19,9 @@ public:
 	virtual ~Guitare();
 
 	virtual void Afficher() const override;
-	virtual void JouerNotes(int rythme) const override;
+	/*virtual void JouerNotes(int rythme) const override;
 	virtual int ChoisirRythme() const override;
-	virtual void LirePartition() const override;
+	virtual void LirePartition(map<string, int> pp) const override;*/
 };
 
 #endif

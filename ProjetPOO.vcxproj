@@ -131,6 +131,7 @@
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="Utilisation.hpp" />
     <ClCompile Include="Xylophone.cpp" />
   </ItemGroup>
   <ItemGroup>
