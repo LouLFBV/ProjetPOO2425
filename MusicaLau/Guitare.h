@@ -15,7 +15,7 @@ private :
 public:
 
     Guitare(std::string pNom, std::string pCouleur);
-    virtual ~Guitare()();
+    virtual ~Guitare();
 
     virtual void Afficher() const override;
     virtual void JouerNotes() const override;

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\MusicaLau.dir\\Triangle.cpp.obj",
+            "outputs": [
+                "C:\\Users\\hugoc\\CLionProjects\\ProjetPOO2425\\MusicaLau\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\MusicaLau.dir\\Triangle.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -68,7 +68,7 @@ void Instrument::JouerNotes() const
 
 int Instrument::ChoisirRythme(int rythme) const
 {
-    int rythme;
+
     std::cout << "Je choisis la vitesse du rythme de l'instrument." << std::endl;
     std::cout << "1. Rythme lent" << std::endl;
     std::cout << "2. Rythme moyen" << std::endl;

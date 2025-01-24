@@ -9,3 +9,7 @@ build CMakeFiles\MusicaLau.dir\Guitare.cpp.obj: dyndep
 
 build CMakeFiles\MusicaLau.dir\Instrument.cpp.obj: dyndep
 
+build CMakeFiles\MusicaLau.dir\Flute.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Triangle.cpp.obj: dyndep
+

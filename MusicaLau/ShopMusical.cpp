@@ -34,6 +34,7 @@ void ShopMusical::config() {
         std::cout << i + 1 << ". ";
         instruments[i]->Afficher();
     }
+    piano->Afficher();
 
 }
 
