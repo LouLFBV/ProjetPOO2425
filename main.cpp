@@ -13,14 +13,15 @@ int main()
 	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu");
 	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge");
 	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir");
+	shared_ptr<Instrument> instrument = make_shared<Instrument>("instrument", "inconnu");
 
 	vector<shared_ptr<Instrument>> instruments;
 	instruments.push_back(xylophone);
 	instruments.push_back(guitare);
 	instruments.push_back(piano);
+	instruments.push_back(instrument);
 
 	cout << " ~~~~ BIENVUENUE CHEZ *MUSICALAU* ~~~" << endl << endl<< "Voici les instruments que nous avons en stock : " << endl << endl;
-
 
 	int choixInstrument=0;
 
@@ -51,7 +52,7 @@ int main()
 		cin >> choixAction;
 		if (choixAction == 1)
 		{
-			instruments[choixInstrument]->JouerNotes();
+			instruments[choixInstrument]->JouerNotes(1);
 		}
 		else if (choixAction == 2)
 		{
