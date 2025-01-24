@@ -132,6 +132,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Maracas.cpp" />
     <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="Theremine.cpp" />
     <ClCompile Include="Xylophone.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="Instrument.hpp" />
     <ClInclude Include="Maracas.hpp" />
     <ClInclude Include="Piano.hpp" />
+    <ClInclude Include="Theremine.hpp" />
     <ClInclude Include="Xylophone.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

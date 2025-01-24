@@ -2,6 +2,7 @@
 #include "Guitare.hpp"
 #include "Piano.hpp"
 #include "Maracas.hpp"
+#include "Theremine.hpp"
 
 #include<memory>
 #include <vector>
@@ -15,6 +16,7 @@ int main()
 	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge");
 	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir");
 	shared_ptr<Maracas> maracas = make_shared<Maracas>("maracas", "Zinzolin");
+	shared_ptr<Theremine> theremine = make_shared<Theremine>("theremine", "argent");
 	shared_ptr<Instrument> instrument = make_shared<Instrument>("instrument", "inconnu");
 
 	vector<shared_ptr<Instrument>> instruments;
@@ -22,6 +24,7 @@ int main()
 	instruments.push_back(guitare);
 	instruments.push_back(piano);
 	instruments.push_back(maracas);
+	instruments.push_back(theremine);
 	instruments.push_back(instrument);
 
 	cout << " ~~~~ BIENVUENUE CHEZ *MUSICALAU* ~~~" << endl << endl << "Voici les instruments que nous avons en stock : " << endl << endl;
