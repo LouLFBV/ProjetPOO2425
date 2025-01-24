@@ -37,8 +37,8 @@ void ShopMusical::config() {
         instruments[i]->Afficher();
     }
     piano->Afficher();
-    piano->LirePartition();
-    piano->ChoisirRythme();
+
+    piano->JouerNotes(1);
 
 }
 

@@ -25,7 +25,7 @@ public:
     std::string GetCouleur() const;
 
     virtual void Afficher() const;
-    virtual void JouerNotes() const;
+    virtual void JouerNotes(float rythme) const;
     virtual int ChoisirRythme() const;
     virtual void LirePartition() const;
 };

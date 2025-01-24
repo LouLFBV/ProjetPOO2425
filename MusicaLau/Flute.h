@@ -17,7 +17,7 @@ public:
     virtual ~Flute();
 
     virtual void Afficher() const override;
-    virtual void JouerNotes() const override;
+    virtual void JouerNotes(float rythme) const override;
     virtual int ChoisirRythme() const override;
     virtual void LirePartition() const override;
 

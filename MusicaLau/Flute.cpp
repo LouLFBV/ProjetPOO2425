@@ -19,7 +19,7 @@ void Flute::Afficher() const
     std::cout << "Cet instrument est un " << aNom << " de couleur " << aCouleur << std::endl;
 }
 
-void Flute::JouerNotes() const
+void Flute::JouerNotes(float rythme) const
 {
     std::cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << std::endl;
     char note;

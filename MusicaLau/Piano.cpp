@@ -20,7 +20,7 @@ void Piano::Afficher() const
     std::cout << "Cet instrument est un " << aNom << " de couleur " << aCouleur << std::endl;
 }
 
-void Piano::JouerNotes() const
+void Piano::JouerNotes(float rythme) const
 {
     std::cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << std::endl;
     char note;
@@ -31,27 +31,35 @@ void Piano::JouerNotes() const
         {
             case 'a':
                 std::cout << "DO" << std::endl;
+            Beep(523, 500*rythme);
             break;
             case 'z':
                 std::cout << "RE" << std::endl;
+            Beep(587, 500 * rythme);
             break;
             case 'e':
                 std::cout << "MI" << std::endl;
+            Beep(659, 500 * rythme);
             break;
             case 'r':
                 std::cout << "FA" << std::endl;
+            Beep(698, 500 * rythme);
             break;
             case 't':
                 std::cout << "SOL" << std::endl;
+            Beep(784, 500 * rythme);
             break;
             case 'y':
                 std::cout << "LA" << std::endl;
+            Beep(440, 500 * rythme);
             break;
             case 'u':
                 std::cout << "SI" << std::endl;
+            Beep(494, 500 * rythme);
             break;
             case 'i':
                 std::cout << "DO" << std::endl;
+            Beep(523, 500 * rythme);
             break;
             case 'q':
                 return;
