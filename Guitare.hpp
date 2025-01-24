@@ -11,11 +11,10 @@ class Guitare : public Instrument
 {
 private:
 
-	string m_nom;
 
 public:
 
-	Guitare(string nom, string couleur);
+	Guitare(string nom, string couleur, float frequence);
 	virtual ~Guitare();
 
 	virtual void Afficher() const override;

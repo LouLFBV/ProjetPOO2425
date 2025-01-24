@@ -1,6 +1,6 @@
 #include "Instrument.hpp"
 
-Instrument::Instrument(string nom, string couleur) : m_nom(nom), m_couleur(couleur)
+Instrument::Instrument(string nom, string couleur, float frequence) : m_nom(nom), m_couleur(couleur), m_frequence(frequence)
 {
 }
 
@@ -18,6 +18,11 @@ string Instrument::GetCouleur() const
 	return m_couleur;
 }
 
+float Instrument::GetFrequence() const
+{
+	return m_frequence;
+}
+
 void Instrument::Afficher() const
 {
 	cout << "Cet instrument est un " << m_nom << " de couleur " << m_couleur << endl;
@@ -25,7 +30,7 @@ void Instrument::Afficher() const
 
 void Instrument::JouerNotes(float rythme) const
 {
-	cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << endl << "Au clair de la Lune : aaazezaezzaaaazezaezzazzzzyyzauytaaazezaezza";
+	cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << endl << "Au clair de la Lune : aaazezaezzaaaazezaezzazzzzyyzauytaaazezaezza" << endl << " Freres Jacques : azeaazeaerterttytreatytreaataata" << endl << endl;
 	char note;
 	while (true)
 	{
@@ -34,35 +39,35 @@ void Instrument::JouerNotes(float rythme) const
 		{
 		case 'a':
 			cout << "DO" << endl;
-            Beep(523, 500*rythme);
+            Beep(523 * m_frequence, 50*rythme);
 			break;
 		case 'z':
 			cout << "RE" << endl;
-            Beep(587, 500 * rythme);
+            Beep(587 * m_frequence, 50 * rythme);
 			break;
 		case 'e':
 			cout << "MI" << endl;
-            Beep(659, 500 * rythme);
+            Beep(659 * m_frequence, 50 * rythme);
 			break;
 		case 'r':
 			cout << "FA" << endl;
-            Beep(698, 500 * rythme);
+            Beep(698 * m_frequence, 50 * rythme);
 			break;
 		case 't':
 			cout << "SOL" << endl;
-            Beep(784, 500 * rythme);
+            Beep(784 * m_frequence, 50 * rythme);
 			break;
 		case 'y':
 			cout << "LA" << endl;
-            Beep(440, 500 * rythme);
+            Beep(440 * m_frequence, 50 * rythme);
 			break;
 		case 'u':
 			cout << "SI" << endl;
-            Beep(494, 500 * rythme);
+            Beep(494 * m_frequence, 50 * rythme);
 			break;
 		case 'i':
 			cout << "DO" << endl;
-            Beep(523, 500 * rythme);
+            Beep(523 * m_frequence, 50 * rythme);
 			break;
 		case 'q':
 			return;
@@ -73,25 +78,22 @@ void Instrument::JouerNotes(float rythme) const
 float Instrument::ChoisirRythme() const
 {
 	int rythme;
-	cout << "1. Rythme lent (xO,5)" << endl<< "2. Rythme normal (x1)" << endl << "3. Rythme rapide(x1.5)" << endl<< "4. Rythme tres rapide(x2)" << endl << endl;
+	cout << "1. Rythme lent" << endl<< "2. Rythme normal" << endl << "3. Rythme rapide" << endl << endl;
 	do
 	{
 		cout << "> ";
 		cin >> rythme;
-	} while (rythme < 1 || rythme > 4);
+	} while (rythme < 1 || rythme > 3);
 	switch(rythme)
 	{
 		case 1:
-			rythme = 0.5;
+			rythme = 12.5;
 			break;	
 		case 2:
-			rythme = 1;
+			rythme = 10;
 			break;
 		case 3:
-			rythme = 1.5;
-			break;
-		case 4:
-			rythme = 2;
+			rythme = 7.5;
 			break;
 	}
 	return rythme;
@@ -101,7 +103,7 @@ void Instrument::LirePartition(map<string,int>note_to_frequency, float rythme, s
 {
 	cout << "Je lis la partition de l'instrument." << endl;
     
-	ifstream fichier(partition);  //Ouverture d'un fichier en lecture
+	ifstream fichier(partition);  
 
 	if (fichier)
 	{
@@ -127,8 +129,8 @@ void Instrument::LirePartition(map<string,int>note_to_frequency, float rythme, s
                     mot2 += ligne[i];
                 }
 			}
-            int frequence = note_to_frequency[mot1];
-            float duree = stof(mot2)*1000/rythme;
+            int frequence = note_to_frequency[mot1]*m_frequence;
+            float duree = stof(mot2)*100*rythme;
 
 			if (frequence == 0)
 			{
@@ -139,6 +141,7 @@ void Instrument::LirePartition(map<string,int>note_to_frequency, float rythme, s
 				Beep(frequence, duree);
             }
 		}
+		cout << "Fin." << endl;
 	}
 	else
 	{

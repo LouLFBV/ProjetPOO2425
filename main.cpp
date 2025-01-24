@@ -1,6 +1,7 @@
 #include "Xylophone.hpp"
 #include "Guitare.hpp"
 #include "Piano.hpp"
+#include "Utilisation.hpp"
 
 #include<memory>
 
@@ -22,10 +23,10 @@ int main()
 
 	// CREATION D'INSTRUMENTS
 
-	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu");
-	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge");
-	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir");
-	shared_ptr<Instrument> instrument = make_shared<Instrument>("instrument", "inconnu");
+	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu",0.9);
+	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge",1.4);
+	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir",1.2);
+	shared_ptr<Instrument> instrument = make_shared<Instrument>("instrument", "cacao",1);
 
 	vector<shared_ptr<Instrument>> instruments;
 	instruments.push_back(xylophone);
@@ -33,7 +34,7 @@ int main()
 	instruments.push_back(piano);
 	instruments.push_back(instrument);
 
-	cout << " ~~~~ BIENVUENUE CHEZ *MUSICALAU* ~~~" << endl << endl<< "Voici les instruments que nous avons en stock : " << endl << endl;
+	cout << " ~~~~ BIENVUENUE CHEZ *MUSICALAU* ~~~~" << endl << endl<< "Voici les instruments que nous avons en stock : " << endl << endl;
 
 	int choixInstrument=0;
 
@@ -57,10 +58,9 @@ int main()
 	// UTILISATION DE L'INSTRUMENT CHOISI
 
 	int choixAction;
-	cout << " Que voulez-vous faire avec cet instrument ?" << endl<< "1. Jouer des notes" << endl<< "2. Lire une partition" << endl << "3. Quitter"<<endl;
 	do
 	{
-		cout << "> ";
+		cout << " Que voulez-vous faire avec cet instrument ?" << endl << "1. Jouer des notes" << endl << "2. Lire une partition" << endl << "3. Quitter" << endl<< "> ";
 		cin >> choixAction;
 		if (choixAction == 1)
 		{

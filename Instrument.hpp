@@ -16,14 +16,16 @@ protected:
 
 	string m_nom;
 	string m_couleur;
+	float m_frequence;
 
 public:
 
-	Instrument(string nom, string couleur);
+	Instrument(string nom, string couleur, float frequence);
 	virtual ~Instrument();
 
 	string GetNom() const;
 	string GetCouleur() const;
+	float GetFrequence() const;
 
 	virtual void Afficher() const;
 	virtual void JouerNotes(float rythme) const;

@@ -1,6 +1,6 @@
 #include "Guitare.hpp"
 
-Guitare::Guitare(string nom, string couleur) : Instrument(nom, couleur)
+Guitare::Guitare(string nom, string couleur, float frequence) : Instrument(nom, couleur, frequence)
 {
 }
 

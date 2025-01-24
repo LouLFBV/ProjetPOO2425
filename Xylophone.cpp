@@ -1,6 +1,6 @@
 #include "Xylophone.hpp"
 
-Xylophone::Xylophone(string nom, string couleur) : Instrument(nom, couleur)
+Xylophone::Xylophone(string nom, string couleur, float frequence) : Instrument(nom, couleur,frequence)
 {
 }
 

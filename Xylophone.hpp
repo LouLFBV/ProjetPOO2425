@@ -11,11 +11,10 @@ class Xylophone : public Instrument
 {
 private:
 
-	string m_nom;
 
 public:
 
-	Xylophone(string nom, string couleur);
+	Xylophone(string nom, string couleur, float frequence);
 	virtual ~Xylophone();
 
 	virtual void Afficher() const override;

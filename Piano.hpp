@@ -11,11 +11,9 @@ class Piano : public Instrument
 {
 private:
 
-	string m_nom;
-
 public:
 
-	Piano(string nom, string couleur);
+	Piano(string nom, string couleur, float frequence);
 	virtual ~Piano();
 
 	virtual void Afficher() const override;
