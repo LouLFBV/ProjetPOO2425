@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <ostream>
+#include <windows.h> // Pour Beep et Sleep sous Windows
 
 Piano::Piano(std::string pNom, std::string pCouleur) : Instrument(pNom, pCouleur) {
 
@@ -58,9 +59,9 @@ void Piano::JouerNotes() const
     }
 }
 
-int Piano::ChoisirRythme(int rythme) const
+int Piano::ChoisirRythme() const
 {
-
+    int rythme;
     std::cout << "Je choisis la vitesse du rythme de l'instrument." << std::endl;
     std::cout << "1. Rythme lent" << std::endl;
     std::cout << "2. Rythme moyen" << std::endl;
@@ -73,7 +74,77 @@ int Piano::ChoisirRythme(int rythme) const
     return rythme;
 }
 
-void Piano::LirePartition() const
-{
-    std::cout<< "Partition jouees" << std::endl;
+void Piano::LirePartition() const {
+    std::cout << "Frere Jacque" << std::endl;
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(294, 500);  // D4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(349, 500);  // F4
+    Sleep(500);
+    Beep(349, 500);  // F4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(1000);      // Pause longue
+
+    // Répétition avec changement
+    Beep(262, 400);  // C4
+    Sleep(400);
+    Beep(262, 400);  // C4
+    Sleep(400);
+    Beep(294, 400);  // D4
+    Sleep(400);
+    Beep(262, 400);  // C4
+    Sleep(400);
+    Beep(349, 400);  // F4
+    Sleep(400);
+    Beep(349, 400);  // F4
+    Sleep(400);
+    Beep(262, 400);  // C4
+    Sleep(1000);      // Pause longue
+
+    // Ajout de variation
+    Beep(262, 250);  // C4
+    Sleep(250);
+    Beep(294, 250);  // D4
+    Sleep(250);
+    Beep(262, 250);  // C4
+    Sleep(250);
+    Beep(349, 250);  // F4
+    Sleep(250);
+    Beep(349, 250);  // F4
+    Sleep(250);
+    Beep(262, 250);  // C4
+    Sleep(500);      // Pause longue
+
+    Beep(220, 500);  // A3 (variation de tonalité)
+    Sleep(500);
+    Beep(220, 500);  // A3
+    Sleep(500);
+    Beep(220, 500);  // A3
+    Sleep(500);
+    Beep(220, 500);  // A3
+    Sleep(500);
+
+    // Retour à la mélodie principale avec variation
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(294, 500);  // D4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(500);
+    Beep(349, 500);  // F4
+    Sleep(500);
+    Beep(349, 500);  // F4
+    Sleep(500);
+    Beep(262, 500);  // C4
+    Sleep(1000);      // Pause longue
+
 }
+

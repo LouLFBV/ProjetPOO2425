@@ -19,7 +19,7 @@ public:
 
     virtual void Afficher() const override;
     virtual void JouerNotes() const override;
-    virtual int ChoisirRythme(int rythme) const override;
+    virtual int ChoisirRythme() const override;
     virtual void LirePartition() const override;
 
 };

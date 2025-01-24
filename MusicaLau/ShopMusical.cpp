@@ -20,8 +20,10 @@ ShopMusical::~ShopMusical() {
 
 void ShopMusical::config() {
 
+
     std::shared_ptr<Piano> piano = std::make_shared<Piano>("piano", "noir");
     std::shared_ptr<Piano> piano1 = std::make_shared<Piano>("piano1", "Rouge");
+    std::shared_ptr<Instrument> instru = std::make_shared<Instrument>("instru", "noir");
     std::vector<std::shared_ptr<Instrument>> instruments;
     instruments.push_back(piano);
     instruments.push_back(piano1);
@@ -35,6 +37,8 @@ void ShopMusical::config() {
         instruments[i]->Afficher();
     }
     piano->Afficher();
+    piano->LirePartition();
+    piano->ChoisirRythme();
 
 }
 
@@ -48,8 +52,8 @@ void ShopMusical::unconfig() {
 }
 
 int main() {
-    ShopMusical *app = new ShopMusical();
 
+    ShopMusical *app = new ShopMusical();
     app->config();
     app->TempsMusical();
     app->unconfig();

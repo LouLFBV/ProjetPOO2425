@@ -6,6 +6,8 @@
 #define INSTRUMENT_H
 #include <iosfwd>
 #include <string>
+#include<fstream>
+#include <windows.h>
 
 
 class Instrument {
@@ -24,7 +26,7 @@ public:
 
     virtual void Afficher() const;
     virtual void JouerNotes() const;
-    virtual int ChoisirRythme(int ryhtme) const;
+    virtual int ChoisirRythme() const;
     virtual void LirePartition() const;
 };
 
