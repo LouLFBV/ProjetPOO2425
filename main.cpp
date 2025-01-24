@@ -27,7 +27,7 @@ int main()
 	instruments.push_back(theremine);
 	instruments.push_back(instrument);
 
-	cout << " ~~~~ BIENVUENUE CHEZ MUSICALOU ~~~" << endl << endl << "Voici les instruments que nous avons en stock : " << endl << endl;
+	cout << "~~~ BIENVUENUE CHEZ MUSICALOU ~~~" << endl << endl << "Voici les instruments que nous avons en stock : " << endl << endl;
 
 	int choixInstrument = 0;
 
