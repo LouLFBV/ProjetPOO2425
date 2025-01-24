@@ -81,10 +81,10 @@ void Instrument::LirePartition() const
 {
     cout << "Je lis la partition de l'instrument." << endl;
 
-    //Beep(440, 500); // La 
+    //Beep(440, 500); // La
     //Beep(494, 500); // Si
     //Beep(523, 500); // Do
-    //Beep(587, 500); // R?
+    //Beep(587, 500); // Re
     //Beep(659, 500); // Mi
     //Beep(698, 500); // Fa
     //Beep(784, 500); // Sol

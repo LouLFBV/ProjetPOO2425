@@ -12,16 +12,13 @@ class Theremine : public Instrument
 {
 private:
 
-	string m_nom;
+    double m_poids;
 
 public:
-    Theremine(string nom, string couleur);
+    Theremine(string nom, string couleur, double poids);
     ~Theremine();
 
     void Afficher() const override;
-    void JouerNotes(int rythme) const override;
-    int ChoisirRythme() const override;
-    void LirePartition() const override;
 };
 
 #endif // THEREMINE_HPP

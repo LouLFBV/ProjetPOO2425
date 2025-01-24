@@ -11,16 +11,13 @@ class Maracas : public Instrument
 {
 private:
 
-	string m_nom;
+    double m_poids;
 
 public:
-    Maracas(string nom, string couleur);
+    Maracas(string nom, string couleur, double poids);
     ~Maracas();
 
     void Afficher() const override;
-    void JouerNotes(int rythme) const override;
-    int ChoisirRythme() const override;
-    void LirePartition() const override;
 };
 
 #endif // MARACAS_HPP
