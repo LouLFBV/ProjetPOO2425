@@ -34,27 +34,35 @@ void Instrument::JouerNotes(int rythme) const
 		{
 		case 'a':
 			cout << "DO" << endl;
+            Beep(523, 500);
 			break;
 		case 'z':
 			cout << "RE" << endl;
+            Beep(587, 500);
 			break;
 		case 'e':
 			cout << "MI" << endl;
+            Beep(659, 500);
 			break;
 		case 'r':
 			cout << "FA" << endl;
+            Beep(698, 500);
 			break;
 		case 't':
 			cout << "SOL" << endl;
+            Beep(784, 500);
 			break;
 		case 'y':
 			cout << "LA" << endl;
+            Beep(440, 500);
 			break;
 		case 'u':
 			cout << "SI" << endl;
+            Beep(494, 500);
 			break;
 		case 'i':
 			cout << "DO" << endl;
+            Beep(523, 500);
 			break;
 		case 'q':
 			return;
