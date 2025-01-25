@@ -7,6 +7,7 @@
 #include <windows.h>
 #include<vector>
 #include<map>
+#include<memory>
 
 using namespace std;
 
@@ -28,9 +29,6 @@ public:
 	float GetFrequence() const;
 
 	virtual void Afficher() const;
-	virtual void JouerNotes(float rythme) const;
-	virtual float ChoisirRythme() const;
-	virtual void LirePartition(map<string,int> pp, float rythme, string partition) const;
 };
 
 #endif
