@@ -21,7 +21,7 @@ std::string Instrument::GetCouleur() const
 {
     return aCouleur;
 }
-
+//toString()
 void Instrument::Afficher() const
 {
     std::cout << "Cet instrument est un " << aNom << " de couleur " << aCouleur << std::endl;

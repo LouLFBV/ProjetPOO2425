@@ -11,16 +11,14 @@
 
 class Triangle : public Instrument {
 private:
+    int aMasse;
 
 public:
 
-    Triangle(std::string pNom, std::string pCouleur);
+    Triangle(std::string pNom, std::string pCouleur, int pMasse);
     virtual ~Triangle();
 
     virtual void Afficher() const override;
-    virtual void JouerNotes(float rythme) const override;
-    virtual int ChoisirRythme() const override;
-    virtual void LirePartition() const override;
 
 };
 
