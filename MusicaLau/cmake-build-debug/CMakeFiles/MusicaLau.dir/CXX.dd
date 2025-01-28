@@ -13,3 +13,5 @@ build CMakeFiles\MusicaLau.dir\Flute.cpp.obj: dyndep
 
 build CMakeFiles\MusicaLau.dir\Triangle.cpp.obj: dyndep
 
+build CMakeFiles\MusicaLau.dir\main.cpp.obj: dyndep
+

@@ -55,11 +55,3 @@ void ShopMusical::unconfig() {
 
 }
 
-int main() {
-
-    ShopMusical *app = new ShopMusical();
-    app->config();
-    app->TempsMusical();
-    app->unconfig();
-    return 0;
-}

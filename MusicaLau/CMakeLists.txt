@@ -17,4 +17,5 @@ add_executable(MusicaLau
         Flute.cpp
         Flute.h
         Triangle.cpp
-        Triangle.h)
+        Triangle.h
+        main.cpp)
