@@ -5,13 +5,12 @@
 #ifndef SHOPMUSICAL_H
 #define SHOPMUSICAL_H
 
+#include <map>
+#include <vector>
+
 #include "Piano.h"
 
 class ShopMusical {
-    private:
-
-
-
 
 public :
 

@@ -18,4 +18,9 @@ add_executable(MusicaLau
         Flute.h
         Triangle.cpp
         Triangle.h
-        main.cpp)
+        main.cpp
+        Utilisation.h
+        Theremine.cpp
+        Theremine.h
+        Maracas.cpp
+        Maracas.h)

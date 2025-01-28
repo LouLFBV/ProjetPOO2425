@@ -15,19 +15,19 @@ protected:
 
     std::string aNom;
     std::string aCouleur;
+    float aFrequence;
 
 public:
 
-    Instrument(std::string pNom, std::string pCouleur);
+    Instrument(std::string pNom, std::string pCouleur, float pFrequence);
     virtual ~Instrument();
 
-    std::string GetNom() const;
-    std::string GetCouleur() const;
+    virtual std::string GetNom() const;
+    virtual std::string GetCouleur() const;
+    virtual float GetFrequence() const ;
 
     virtual void Afficher() const;
-    virtual void JouerNotes(float rythme) const;
-    virtual int ChoisirRythme() const;
-    virtual void LirePartition() const;
+
 };
 
 

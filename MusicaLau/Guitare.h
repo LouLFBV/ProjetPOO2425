@@ -10,17 +10,15 @@
 
 
 class Guitare : public Instrument {
-private :
+
 
 public:
 
-    Guitare(std::string pNom, std::string pCouleur);
+    Guitare(std::string pNom, std::string pCouleur, float pFrequence);
     virtual ~Guitare();
 
     virtual void Afficher() const override;
-    virtual void JouerNotes(float rythme) const override;
-    virtual int ChoisirRythme() const override;
-    virtual void LirePartition() const override;
+
 };
 
 

@@ -7,8 +7,8 @@
 #include <iostream>
 #include <ostream>
 
-Triangle::Triangle(std::string pNom, std::string pCouleur, int pMasse) : Instrument(pNom, pCouleur) {
-    aMasse = pMasse;
+Triangle::Triangle(std::string pNom, std::string pCouleur, float pFrequence ,double pPoids) : Instrument(pNom, pCouleur, pFrequence) , aPoids( pPoids) {
+
 }
 
 Triangle::~Triangle(){}
@@ -16,5 +16,5 @@ Triangle::~Triangle(){}
 
 void Triangle::Afficher() const
 {
-    std::cout << "Cet instrument est un " << aNom << " de couleur " << aCouleur << " et de poid " << aMasse << std::endl;
+    std::cout << "Cet instrument est un " << aNom << " de couleur " << aCouleur << " et de poid " << aPoids << std::endl;
 }

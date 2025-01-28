@@ -10,17 +10,15 @@
 
 
 class Piano : public Instrument {
-private:
+
 
 public:
 
-    Piano(std::string pNom, std::string pCouleur);
+    Piano(std::string pNom, std::string pCouleur, float pFrequence);
     virtual ~Piano();
 
-    virtual void Afficher() const override;
-    virtual void JouerNotes(float rythme) const override;
-    virtual int ChoisirRythme() const override;
-    virtual void LirePartition() const override;
+    void Afficher() const override;
+
 
 };
 

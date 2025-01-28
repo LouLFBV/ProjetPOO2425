@@ -15,3 +15,7 @@ build CMakeFiles\MusicaLau.dir\Triangle.cpp.obj: dyndep
 
 build CMakeFiles\MusicaLau.dir\main.cpp.obj: dyndep
 
+build CMakeFiles\MusicaLau.dir\Theremine.cpp.obj: dyndep
+
+build CMakeFiles\MusicaLau.dir\Maracas.cpp.obj: dyndep
+

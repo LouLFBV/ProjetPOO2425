@@ -12,13 +12,11 @@ class Xylophone : public Instrument {
 
     public:
 
-    Xylophone(std::string pNom, std::string pCouleur);
+    Xylophone(std::string pNom, std::string pCouleur, float pFrequence);
     virtual ~Xylophone();
 
-    virtual void Afficher() const override;
-    virtual void JouerNotes(float rythme) const override;
-    virtual int ChoisirRythme() const override;
-    virtual void LirePartition() const override;
+    void Afficher() const override;
+
 };
 
 

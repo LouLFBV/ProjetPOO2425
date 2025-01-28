@@ -13,13 +13,10 @@ private:
 
 public:
 
-    Flute(std::string pNom, std::string pCouleur);
+    Flute(std::string pNom, std::string pCouleur, float pFrequence);
     virtual ~Flute();
 
     virtual void Afficher() const override;
-    virtual void JouerNotes(float rythme) const override;
-    virtual int ChoisirRythme() const override;
-    virtual void LirePartition() const override;
 
 };
 
