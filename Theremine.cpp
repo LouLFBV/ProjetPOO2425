@@ -1,6 +1,6 @@
 #include "Theremine.hpp"
 
-Theremine::Theremine(string nom, string couleur, float frequence, float poids) : Instrument(nom, couleur, frequence), m_poids(poids)
+Theremine::Theremine(string nom, string couleur, float frequence, int poids) : Instrument(nom, couleur, frequence), m_poids(poids)
 {
 }
 

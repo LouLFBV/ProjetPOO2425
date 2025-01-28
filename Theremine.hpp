@@ -7,10 +7,10 @@ class Theremine : public Instrument
 {
 private:
 
-    double m_poids;
+    int m_poids;
 
 public:
-    Theremine(string nom, string couleur, float frequence, float poids);
+    Theremine(string nom, string couleur, float frequence, int poids);
     ~Theremine();
 
     void Afficher() const override;
