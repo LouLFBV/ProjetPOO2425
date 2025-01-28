@@ -137,6 +137,7 @@
     <ClCompile Include="Theremine.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="Triangle.hpp" />
+    <ClCompile Include="Utilisation.cpp" />
     <ClCompile Include="Utilisation.hpp" />
     <ClCompile Include="Xylophone.cpp" />
   </ItemGroup>

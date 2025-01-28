@@ -1,10 +1,4 @@
-#include "Xylophone.hpp"
-#include "Guitare.hpp"
-#include "Piano.hpp"
-#include "Flute.hpp"
-#include "Triangle.hpp"
-#include "Maracas.hpp"
-#include "Theremine.hpp"
+
 
 #include "Utilisation.hpp"
 
@@ -42,9 +36,7 @@ int main()
 		}
 	} while (choixInstrument != 0);
 	
-
 	cout << "Merci d'avoir utilise notre service!" << endl;
-
 
 	return 0;
 }

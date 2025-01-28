@@ -11,7 +11,7 @@ private:
     float m_poids;
 
 public:
-    Maracas(string nom, string couleur, float frequende, float poids);
+    Maracas(string nom, string couleur, float frequence, float poids);
     ~Maracas();
 
     void Afficher() const override;
