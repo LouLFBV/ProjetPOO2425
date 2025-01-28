@@ -1,25 +1,10 @@
 #include "Piano.hpp"
 
-Piano::Piano(string nom, string couleur) : Instrument(nom, couleur) {}
+Piano::Piano(string nom, string couleur, float frequence) : Instrument(nom, couleur, frequence) {}
 
 Piano::~Piano() {}
 
 void Piano::Afficher() const
 {
-	cout << "Ceci est un piano." << endl;
-}
-
-void Piano::JouerNotes() const
-{
-	cout << "Je joue du piano" << endl;
-}
-
-void Piano::ChoisirRythme() const
-{
-	cout << "Je choisis le rythme" << endl;
-}
-
-void Piano::LirePartition() const
-{
-	cout << "Je lis la partition" << endl;
+	cout << "Ceci est un piano de couleur " << m_couleur << "." << endl;
 }

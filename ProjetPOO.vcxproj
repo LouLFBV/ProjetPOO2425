@@ -127,16 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Flute.cpp" />
     <ClCompile Include="Guitare.cpp" />
     <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Maracas.cpp" />
     <ClCompile Include="Piano.cpp" />
+    <ClCompile Include="Theremine.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Utilisation.cpp" />
     <ClCompile Include="Xylophone.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Flute.hpp" />
     <ClInclude Include="Guitare.hpp" />
     <ClInclude Include="Instrument.hpp" />
+    <ClInclude Include="Maracas.hpp" />
     <ClInclude Include="Piano.hpp" />
+    <ClInclude Include="Theremine.hpp" />
+    <ClInclude Include="Triangle.hpp" />
+    <ClInclude Include="Utilisation.hpp" />
     <ClInclude Include="Xylophone.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

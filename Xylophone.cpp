@@ -1,7 +1,6 @@
 #include "Xylophone.hpp"
-#include "Xylophone.hpp"
 
-Xylophone::Xylophone(string nom, string couleur) : Instrument(nom, couleur)
+Xylophone::Xylophone(string nom, string couleur, float frequence) : Instrument(nom, couleur, frequence)
 {
 }
 
@@ -11,17 +10,5 @@ Xylophone::~Xylophone()
 
 void Xylophone::Afficher() const
 {
-	cout << "Ceci est une xylophone." << endl;
-}
-
-void Xylophone::JouerNotes() const
-{
-}
-
-void Xylophone::ChoisirRythme() const
-{
-}
-
-void Xylophone::LirePartition() const
-{
+	cout << "Ceci est un xylophone de couleur " << m_couleur << "." << endl;
 }
