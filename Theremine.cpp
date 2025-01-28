@@ -10,5 +10,5 @@ Theremine::~Theremine()
 
 void Theremine::Afficher() const
 {
-    cout << "Ceci est un theremine de couleur " << m_couleur << " et de poids " << m_poids << " kg." << endl;
+    cout << "Theremine de couleur " << m_couleur << " et de poids " << m_poids << " kg." << endl;
 }

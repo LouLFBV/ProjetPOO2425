@@ -14,5 +14,5 @@ Triangle::~Triangle() {}
 
 void Triangle::Afficher() const
 {
-    cout << "Cet instrument est un " << m_nom << " de couleur " << m_couleur << " et de poids " << aMasse << " kg."<< endl;
+    cout << "Triangle de couleur " << m_couleur << " et de poids " << aMasse << " kg." << endl;
 }

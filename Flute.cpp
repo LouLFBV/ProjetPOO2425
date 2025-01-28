@@ -13,5 +13,5 @@ Flute::~Flute() {}
 
 void Flute::Afficher() const
 {
-    std::cout << "Cet instrument est un " << m_nom << " de couleur " << m_couleur << endl;
+    cout << "Flute de couleur " << m_couleur << endl;
 }

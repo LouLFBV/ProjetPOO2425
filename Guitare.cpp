@@ -10,7 +10,7 @@ Guitare::~Guitare()
 
 void Guitare::Afficher() const
 {
-	cout << "Ceci est une guitare de couleur " << m_couleur << "." << endl;
+	cout << "Guitare de couleur " << m_couleur << "." << endl;
 }
 
 

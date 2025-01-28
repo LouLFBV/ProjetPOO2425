@@ -10,6 +10,6 @@ Xylophone::~Xylophone()
 
 void Xylophone::Afficher() const
 {
-	cout << "Ceci est un xylophone de couleur " << m_couleur << "." << endl;
+	cout << "Xylophone de couleur " << m_couleur << "." << endl;
 }
 

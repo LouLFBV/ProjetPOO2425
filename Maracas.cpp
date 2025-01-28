@@ -10,5 +10,5 @@ Maracas::~Maracas()
 
 void Maracas::Afficher() const
 {
-	cout << "Ceci est un maracas de couleur " << m_couleur << " et de poids " << m_poids << " kg." << endl;
+	cout << "Maracas de couleur " << m_couleur << " et de poids " << m_poids << " kg." << endl;
 }

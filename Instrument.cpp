@@ -25,6 +25,6 @@ float Instrument::GetFrequence() const
 
 void Instrument::Afficher() const
 {
-	cout << "Cet instrument est un " << m_nom << " de couleur " << m_couleur << endl;
+	cout << "Instrument de couleur " << m_couleur << endl;
 }
 
