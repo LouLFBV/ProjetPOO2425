@@ -3,8 +3,6 @@
 
 #include "Instrument.hpp"
 
-using namespace std;
-
 class Guitare : public Instrument
 {
 public:
