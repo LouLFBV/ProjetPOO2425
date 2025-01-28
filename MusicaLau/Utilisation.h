@@ -203,10 +203,10 @@ static int ChoixAction(const std::shared_ptr<Instrument> &instrument, const std:
 		switch (choixPartition)
 		{
 		case 1:
-			partition = "C:/ecole/Ynov/B1/POO/C++/Mario.txt";
+			partition = "C:/Users/hugoc/Ynov/POO/Mario.txt";
 			break;
 		case 2:
-			partition = "C:/ecole/Ynov/B1/POO/C++/StarWars.txt";
+			partition = "C:/Users/hugoc/Ynov/POO/StarWars.txt";
 			break;
 		case 3:
 			partition = "";
