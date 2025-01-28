@@ -6,9 +6,6 @@
 
 class Xylophone : public Instrument
 {
-private:
-
-
 public:
 
 	Xylophone(string nom, string couleur, float frequence);

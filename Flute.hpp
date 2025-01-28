@@ -7,9 +7,8 @@
 #include "Instrument.hpp"
 
 
-class Flute : public Instrument {
-private:
-
+class Flute : public Instrument 
+{
 public:
 
     Flute(string pNom, string pCouleur, float frequence);

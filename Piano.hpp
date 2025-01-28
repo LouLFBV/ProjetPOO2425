@@ -6,8 +6,6 @@
 
 class Piano : public Instrument
 {
-private:
-
 public:
 
 	Piano(string nom, string couleur, float frequence);

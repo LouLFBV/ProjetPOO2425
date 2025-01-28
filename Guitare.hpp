@@ -7,9 +7,6 @@ using namespace std;
 
 class Guitare : public Instrument
 {
-private:
-
-
 public:
 
 	Guitare(string nom, string couleur, float frequence);
