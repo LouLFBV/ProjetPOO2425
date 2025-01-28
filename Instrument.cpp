@@ -1,6 +1,6 @@
 #include "Instrument.hpp"
 
-Instrument::Instrument(string nom, string couleur, float frequence) : m_nom(nom), m_couleur(couleur), m_frequence(frequence)
+Instrument::Instrument(string nom, string couleur, float frequence, float poids) : m_nom(nom), m_couleur(couleur), m_frequence(frequence), m_poids(poids)
 {
 }
 

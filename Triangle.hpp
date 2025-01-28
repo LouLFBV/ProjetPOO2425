@@ -7,13 +7,11 @@
 #include "Instrument.hpp"
 
 
-class Triangle : public Instrument {
-private:
-    int aMasse;
-
+class Triangle : public Instrument 
+{
 public:
 
-    Triangle(string pNom, string pCouleur, float frequence, int pMasse);
+    Triangle(string pNom, string pCouleur, float frequence, float m_poids);
     virtual ~Triangle();
 
     virtual void Afficher() const override;

@@ -6,10 +6,6 @@
 
 class Maracas : public Instrument
 {
-private:
-
-    float m_poids;
-
 public:
     Maracas(string nom, string couleur, float frequence, float poids);
     ~Maracas();

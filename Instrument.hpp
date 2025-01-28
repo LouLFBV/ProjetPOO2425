@@ -18,10 +18,11 @@ protected:
 	string m_nom;
 	string m_couleur;
 	float m_frequence;
+	float m_poids;
 
 public:
 
-	Instrument(string nom, string couleur, float frequence);
+	Instrument(string nom, string couleur, float frequence, float poids);
 	virtual ~Instrument();
 
 	string GetNom() const;

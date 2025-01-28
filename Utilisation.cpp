@@ -2,10 +2,10 @@
 
 vector<shared_ptr<Instrument>> Instruments()
 {
-	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu", 0.9);
-	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge", 1.4);
-	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir", 1);
-	shared_ptr<Flute> flute = make_shared<Flute>("flute", "blanc", 1.2);
+	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu", 0.9,1,8);
+	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge", 1.4	,10.5,6);
+	shared_ptr<Piano> piano = make_shared<Piano>("piano", "noir", 1, 20,8);
+	shared_ptr<Flute> flute = make_shared<Flute>("flute", "blanc", 1.2,0.3,8);
 	shared_ptr<Triangle> triangle = make_shared<Triangle>("triangle", "metal", 1.5, 2);
 	shared_ptr<Theremine> theremine = make_shared<Theremine>("theremine", "bois", 2, 20);
 	shared_ptr<Maracas> maracas = make_shared<Maracas>("flute", "blanc", 0.5, 1.0);
@@ -23,7 +23,7 @@ vector<shared_ptr<Instrument>> Instruments()
 
 void JouerNotes(shared_ptr<Instrument> instrument, float rythme)
 {
-	cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << endl << "Au clair de la Lune : aaazezaezzaaaazezaezzazzzzyyzauytaaazezaezza" << endl << "Freres Jacques : azeaazeaerterttytreatytreaataata" << endl << endl;
+	cout << "Taper sur les lettres (azertyui) pour jouer des notes (appuyer sur q pour arreter)." << endl << "Au clair de la Lune : aaazezaezzaaaazezaezzazzzzyyzauytaaazezaezza" << endl << "Freres Jacques : azeaazeaerterttytreatytreaataata" << endl << "Green Hill (Sonic) : ayauautyezauautayauaut" << endl << endl;
 	char note;
 	while (true)
 	{
@@ -48,7 +48,7 @@ void JouerNotes(shared_ptr<Instrument> instrument, float rythme)
 			break;
 		case 't':
 			cout << "SOL" << endl;
-			Beep(784 * instrument->GetFrequence(), 50 * rythme);
+			Beep(392 * instrument->GetFrequence(), 50 * rythme);
 			break;
 		case 'y':
 			cout << "LA" << endl;

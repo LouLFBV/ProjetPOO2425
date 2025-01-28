@@ -6,9 +6,13 @@
 
 class Piano : public Instrument
 {
+private:
+
+	int m_nombreDeTouche;
+
 public:
 
-	Piano(string nom, string couleur, float frequence);
+	Piano(string nom, string couleur, float frequence, float poids, int nombreDeTouche);
 	virtual ~Piano();
 
 	virtual void Afficher() const override;

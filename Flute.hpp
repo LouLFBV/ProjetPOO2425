@@ -9,9 +9,13 @@
 
 class Flute : public Instrument 
 {
+private:
+
+	int m_nombreDeTrou;
+
 public:
 
-    Flute(string pNom, string pCouleur, float frequence);
+    Flute(string pNom, string pCouleur, float frequence, float poids, int nombreDeTrou);
     virtual ~Flute();
 
     virtual void Afficher() const override;
