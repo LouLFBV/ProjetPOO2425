@@ -27,7 +27,6 @@ int main()
 		int choixAction;
 		do
 		{
-			//LIRE PARTITION
 			choixAction = ChoixAction(instruments[choixInstrument], instruments, choixInstrument);
 		} while (choixAction < 3);
 		if (choixAction == 4)

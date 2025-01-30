@@ -10,6 +10,6 @@ Xylophone::~Xylophone()
 
 void Xylophone::Afficher() const
 {
-	cout << "Xylophone de couleur " << m_couleur << ", " << m_nombreDeLamelle << "lamelles, " << m_poids << " kg." << endl;
+	cout << "Xylophone de couleur " << m_couleur << ", " << m_nombreDeLamelle << " lamelles, " << m_poids << " kg." << endl;
 }
 
