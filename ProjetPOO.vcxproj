@@ -149,6 +149,9 @@
     <ClInclude Include="Theremine.hpp" />
     <ClInclude Include="Xylophone.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Users\loulo\Downloads\POOProject.odp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
