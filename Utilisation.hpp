@@ -11,6 +11,7 @@
 #include "Theremine.hpp"
 #include"Instrument.hpp"
 
+vector<string> partitions;
 
 vector<shared_ptr<Instrument>> Instruments();
 
@@ -25,5 +26,7 @@ int Affichage(vector<shared_ptr<Instrument>> instruments);
 float ChoixRythme(vector<shared_ptr<Instrument>> instruments, int choixInstrument, string action);
 
 int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>> instruments, int choixInstrument);
+
+vector<string> AjouterPartition(vector<string> partitions);
 
 #endif 

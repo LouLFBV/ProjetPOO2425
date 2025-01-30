@@ -18,7 +18,37 @@ vector<shared_ptr<Instrument>> Instruments()
 	instruments.push_back(triangle);
 	instruments.push_back(theremine);
 	instruments.push_back(maracas);
+
+
+	partitions.push_back("C:/ecole/Ynov/B1/POO/C++/Mario.txt");
+	partitions.push_back("C:/ecole/Ynov/B1/POO/C++/StarWars.txt");
+
 	return instruments;
+}
+
+
+vector<string> AjouterPartition(vector<string> partitions)
+{
+	int rep;
+	do
+	{
+		cout << "Souhaitez-vous ajouter une partition ?" << endl << "1. Oui" << endl << "2. Non" << endl << endl << "> ";
+		cin >> rep;
+
+	} while (rep != 2 && rep != 1 );
+	
+	if (rep == 2)
+	{
+		return partitions;
+	}
+	else if (rep == 1)
+	{
+		string partition;
+		cout << "Entrez le chemin de la partition que vous voulez ajouter." << endl << "> ";
+		cin >> partition;
+		partitions.push_back(partition);
+	}
+	return partitions;
 }
 
 void JouerNotes(shared_ptr<Instrument> instrument, float rythme)
@@ -94,7 +124,7 @@ float ChoisirRythme()
 
 void LirePartition(shared_ptr<Instrument>instrument, map<string, int>note_to_frequency, float rythme, string partition)
 {
-	cout << "Je lis la partition de l'instrument." << endl;
+	cout << endl << endl << "Je lis la partition de l'instrument." << endl;
 
 	ifstream fichier(partition);
 
@@ -184,21 +214,15 @@ int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>>
 
 		int choixPartition;
 		string partition;
-		cout << "Mainteant choississez un fichier de partition." << endl << endl << "1.Mario" << endl << "2.StarWars" << endl << "3.Autre" << endl << endl << "> ";
-		cin >> choixPartition;
-
-		switch (choixPartition)
+		cout << "Mainteant choississez un fichier de partition." << endl << endl;
+		partitions = AjouterPartition(partitions);
+		
+		for (int i = 0; i < partitions.size(); i++)
 		{
-		case 1:
-			partition = "C:/ecole/Ynov/B1/POO/C++/Mario.txt";
-			break;
-		case 2:
-			partition = "C:/ecole/Ynov/B1/POO/C++/StarWars.txt";
-			break;
-		case 3:
-			partition = "";
-			break;
+			cout << i + 1 << ". " << partitions[i] << endl;
 		}
+		cin >> choixPartition;
+		partition = partitions[choixPartition - 1];
 
 		map<string, int> note_to_frequency = {
 			{"B0", 31}, {"C1", 33}, {"C#1", 35}, {"D1", 37}, {"D#1", 39}, {"E1", 41}, {"F1", 44}, {"F#1", 46}, {"G1", 49}, {"G#1", 52},
