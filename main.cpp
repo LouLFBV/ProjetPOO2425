@@ -1,7 +1,4 @@
-
-
 #include "Utilisation.hpp"
-
 
 int main()
 {
