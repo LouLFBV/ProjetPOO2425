@@ -11,9 +11,7 @@
 #include "Theremine.hpp"
 #include"Instrument.hpp"
 
-vector<string> partitions;
-
-vector<shared_ptr<Instrument>> Instruments();
+vector<shared_ptr<Instrument>> Instruments(shared_ptr<vector<string>>);
 
 void JouerNotes(shared_ptr<Instrument> instrument, float rythme);
 
@@ -25,8 +23,8 @@ int Affichage(vector<shared_ptr<Instrument>> instruments);
 
 float ChoixRythme(vector<shared_ptr<Instrument>> instruments, int choixInstrument, string action);
 
-int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>> instruments, int choixInstrument);
+int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>> instruments, int choixInstrument, shared_ptr<vector<string>> partitions);
 
-vector<string> AjouterPartition(vector<string> partitions);
+void AjouterPartition(shared_ptr<vector<string>>& partitions);
 
 #endif 

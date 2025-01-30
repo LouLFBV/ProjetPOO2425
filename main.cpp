@@ -2,8 +2,9 @@
 
 int main()
 {
-	// CREATION D'INSTRUMENTS
-	vector<shared_ptr<Instrument>> instruments = Instruments();
+	// CREATION D'INSTRUMENTS ET DE PARTITIONS
+	shared_ptr<vector<string>> partitions = make_shared<vector<string>>();
+	vector<shared_ptr<Instrument>> instruments = Instruments(partitions);
 
 	cout << " ~~~~ BIENVUENUE CHEZ *MUSICALAU* ~~~" << endl << endl << "Voici les instruments que nous avons en stock : " << endl << endl;
 
@@ -24,7 +25,7 @@ int main()
 		int choixAction;
 		do
 		{
-			choixAction = ChoixAction(instruments[choixInstrument], instruments, choixInstrument);
+			choixAction = ChoixAction(instruments[choixInstrument], instruments, choixInstrument, partitions);
 		} while (choixAction < 3);
 		if (choixAction == 4)
 		{

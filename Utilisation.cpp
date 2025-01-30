@@ -1,6 +1,6 @@
 #include "Utilisation.hpp"
 
-vector<shared_ptr<Instrument>> Instruments()
+vector<shared_ptr<Instrument>> Instruments(shared_ptr<vector<string>> partitions)
 {
 	shared_ptr<Xylophone> xylophone = make_shared<Xylophone>("xylophone", "bleu", 0.9,1,8);
 	shared_ptr<Guitare> guitare = make_shared<Guitare>("guitare", "rouge", 1.4	,10.5,6);
@@ -19,15 +19,14 @@ vector<shared_ptr<Instrument>> Instruments()
 	instruments.push_back(theremine);
 	instruments.push_back(maracas);
 
-
-	partitions.push_back("C:/ecole/Ynov/B1/POO/C++/Mario.txt");
-	partitions.push_back("C:/ecole/Ynov/B1/POO/C++/StarWars.txt");
+	partitions->push_back("C:/ecole/Ynov/B1/POO/C++/Mario.txt");
+	partitions->push_back("C:/ecole/Ynov/B1/POO/C++/StarWars.txt");
 
 	return instruments;
 }
 
 
-vector<string> AjouterPartition(vector<string> partitions)
+void AjouterPartition(shared_ptr<vector<string>>& partitions)
 {
 	int rep;
 	do
@@ -39,16 +38,16 @@ vector<string> AjouterPartition(vector<string> partitions)
 	
 	if (rep == 2)
 	{
-		return partitions;
+		return;
 	}
 	else if (rep == 1)
 	{
 		string partition;
 		cout << "Entrez le chemin de la partition que vous voulez ajouter." << endl << "> ";
 		cin >> partition;
-		partitions.push_back(partition);
+		partitions->push_back(partition);
 	}
-	return partitions;
+	return ;
 }
 
 void JouerNotes(shared_ptr<Instrument> instrument, float rythme)
@@ -196,7 +195,7 @@ float ChoixRythme(vector<shared_ptr<Instrument>> instruments, int choixInstrumen
 	return ChoisirRythme();
 }
 
-int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>> instruments, int choixInstrument)
+int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>> instruments, int choixInstrument,shared_ptr<vector<string>> partitions)
 {
 	int choixAction;
 	cout << " Que voulez-vous faire avec cet instrument ?" << endl << "1. Jouer des notes" << endl << "2. Lire une partition" << endl << "3. Changer d'instrument" << endl << "4. Quitter " << endl << "> ";
@@ -214,15 +213,15 @@ int ChoixAction(shared_ptr<Instrument>instrument, vector<shared_ptr<Instrument>>
 
 		int choixPartition;
 		string partition;
+		AjouterPartition(partitions);
+
 		cout << "Mainteant choississez un fichier de partition." << endl << endl;
-		partitions = AjouterPartition(partitions);
-		
-		for (int i = 0; i < partitions.size(); i++)
+		for (int i = 0; i < partitions->size(); i++)
 		{
-			cout << i + 1 << ". " << partitions[i] << endl;
+			cout << i + 1 << ". " << (*partitions)[i] << endl;
 		}
 		cin >> choixPartition;
-		partition = partitions[choixPartition - 1];
+		partition = (*partitions)[choixPartition - 1];
 
 		map<string, int> note_to_frequency = {
 			{"B0", 31}, {"C1", 33}, {"C#1", 35}, {"D1", 37}, {"D#1", 39}, {"E1", 41}, {"F1", 44}, {"F#1", 46}, {"G1", 49}, {"G#1", 52},
